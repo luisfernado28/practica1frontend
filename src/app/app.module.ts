@@ -9,11 +9,13 @@ import { HomeComponent } from './pages/home/home.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {WSService} from './servicios/ws.service';
 import {HttpClientModule} from '@angular/common/http';
+import { MainComponent } from './pages/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

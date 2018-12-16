@@ -5,4 +5,6 @@ export class UserClass {
                public email: string,
                public fecha: string,
                public estado: string  ) {}
+
+
 }

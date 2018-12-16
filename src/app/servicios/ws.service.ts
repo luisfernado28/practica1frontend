@@ -24,4 +24,11 @@ export class WSService {
         .set('Content-Type', 'application/json')
     });
   }
+
+  public delete<Object>(url: string, token: string){
+    return this.http.delete<Object>(this.url  + url, {
+      headers: new HttpHeaders()
+        .set('Content-Type', 'application/json')
+    } );
+  }
 }
