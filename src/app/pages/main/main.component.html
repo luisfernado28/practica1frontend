@@ -1,0 +1,71 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+  <form>
+    <div class="container">
+      <label ><b>Nombre</b></label>
+      <input type="text"  name="nombre" required  [(ngModel)]="nombre">
+      <br>
+      <label ><b>ci</b></label>
+      <input type="text"  name="ci" required [(ngModel)]="ci">
+      <br>
+      <label ><b>Pass</b></label>
+      <input type="text"  name="pass" required [(ngModel)]="pass">
+      <br>
+      <label ><b>email</b></label>
+      <input type="text"  name="email" required [(ngModel)]="email">
+      <br>
+      <label ><b>fecha</b></label>
+      <input type="text"  name="fecha" required [(ngModel)]="fecha">
+      <br>
+      <button (click)="insertUser()">Insertar Usuario</button>
+      <br> <br> <br>
+
+      <label ><b>Nombre</b></label>
+      <input type="text"  name="nombre" required  [(ngModel)]="nombre">
+      <br>
+      <button (click)="deleteUser()">Borrar Usuario</button>
+      <br> <br> <br>
+      <label ><b>Nombre</b></label>
+      <input type="text" name="nombre" required  [(ngModel)]="nombre">
+      <br>
+      <label ><b>ci</b></label>
+      <input type="text"  name="ci" required [(ngModel)]="ci">
+      <br>
+      <label ><b>Pass</b></label>
+      <input type="text"  name="pass" required [(ngModel)]="pass">
+      <br>
+      <label ><b>email</b></label>
+      <input type="text" name="email" required [(ngModel)]="email">
+      <br>
+      <label ><b>fecha</b></label>
+      <input type="text"  name="fecha" required [(ngModel)]="fecha">
+      <br>
+      <button (click)="updateUser()">Actualizar Usuario</button>
+      <br> <br> <br>
+
+      <h1> Get A User</h1>
+      <label ><b>Nombre</b></label>
+      <input type="text" name="nombre" required  [(ngModel)]="nombre"> <br>
+      <button (click)="getUser()">Obtener Usuario</button>
+      <br>
+
+      {{userClass.ci}}
+      {{userClass.pass}}
+      {{userClass.email}}
+      {{userClass.fecha}}
+      {{userClass.estado}}
+
+    </div>
+
+    <br/>
+    <span>{{valor1}}</span>
+    <br/>
+    <span>{{valor2}}</span>
+    <br/>
+  </form>
+
+   </body>
+</html>
